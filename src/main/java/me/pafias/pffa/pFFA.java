@@ -41,6 +41,7 @@ public final class pFFA extends JavaPlugin {
         PluginManager pm = getServer().getPluginManager();
 
         if (pm.getPlugin("PlaceholderAPI") != null)
+            System.out.println("PlaceholderAPI registered!");
             servicesManager.getPAPIExpansion().register();
 
         pm.registerEvents(new JoinQuitListener(plugin), plugin);
